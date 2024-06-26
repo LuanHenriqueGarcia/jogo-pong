@@ -1,4 +1,3 @@
-//Variáveis da bolinha
 let xBolinha = 300;
 let yBolinha = 200;
 let diametroBolinha = 13;
@@ -6,7 +5,6 @@ let raio = diametroBolinha/2;
 let velocidadeXBolinha = 6;
 let velocidadeYBolinha = 6;
 
-//Variáveis da minha raquete
 let xMinhaRaquete = 10;
 let yMinhaRaquete = 150;
 let yMinMinhaRaquete = 0;
@@ -15,20 +13,16 @@ let alturaRaquetes = 100;
 let larguraRaquetes = 10;
 let velocidadeMinhaRaquete = 8;
 
-//Variáveis do oponente
 let xRaqueteOponente = 580;
 let yRaqueteOponente = 150;
 let velocidadeYOponente;
 let chanceDeErrar = 0;
 
-//Variável de detecção de colisão
 let colidiu = false;
 
-//Variáveis do placar
 let meusPontos = 0;
 let pontosOponente = 0;
 
-//Sons do jogo
 let raquetada;
 let ponto;
 let trilha;
@@ -44,7 +38,6 @@ function setup() {
   trilha.loop();
 }
 
-//Aqui o jogo acontece
 function draw() {
   background(0);
   mostraBolinha();
