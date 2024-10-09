@@ -1,4 +1,4 @@
-# Mata Mosquito
+# Ping-pong
 
 Joguinho simples com o objetivo de não deixar a bolinha encostar na parede, para ganha você deve fazer com que a bolinha encoste na parede do adversário.
 
