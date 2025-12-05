@@ -1,7 +1,64 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 canvas {
   display: block;
+}
+body {
+  background: #0f1115;
+  color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+#controls {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #343434;
+  border-radius: 10px;
+  z-index: 10;
+}
+#controls label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+#controls button {
+  background: #ff8c00;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#controls button:hover {
+  background: #ffae33;
+}
+#controls.collapsed {
+  padding: 6px 8px;
+}
+#controls.collapsed > *:not(#menu-toggle) {
+  display: none;
+}
+#controls select,
+#controls input[type="range"] {
+  cursor: pointer;
+}
+#controls select {
+  background: #111;
+  color: #f0f0f0;
+  border: 1px solid #3a3a3a;
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+#controls input[type="range"] {
+  width: 100px;
 }

@@ -8,6 +8,33 @@
 
   </head>
   <body>
+    <div id="controls">
+      <button id="menu-toggle">Minimizar menu</button>
+      <button id="fullscreen-toggle">Tela cheia</button>
+      <label>Modo:
+        <select id="mode-select">
+          <option value="bot">Bot</option>
+          <option value="pvp">2 Jogadores</option>
+        </select>
+      </label>
+      <label id="bot-level-wrapper">Nivel do bot:
+        <select id="bot-level">
+          <option value="facil">Facil</option>
+          <option value="medio" selected>Medio</option>
+          <option value="dificil">Dificil</option>
+        </select>
+      </label>
+      <label>Velocidade bola:
+        <input id="ball-speed" type="range" min="4" max="12" value="6" step="1">
+        <span id="ball-speed-value">6</span>
+      </label>
+      <label>Velocidade raquete:
+        <input id="paddle-speed" type="range" min="6" max="14" value="8" step="1">
+        <span id="paddle-speed-value">8</span>
+      </label>
+      <button id="reset-game">Reiniciar</button>
+      <button id="toggle-help">Ver instruções</button>
+    </div>
     <main>
     </main>
     <script src="sketch.js"></script>
